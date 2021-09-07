@@ -1,0 +1,13 @@
+name: Hello World
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ $default-branch ]
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print
+        run: echo Hello World
